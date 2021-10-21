@@ -1,6 +1,6 @@
 {
   "labels": [
-    "renovate/{{depName}}",
+    "renovate/{{depName}}"
   ],
   "packageRules": [
     {
