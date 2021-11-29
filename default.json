@@ -8,6 +8,10 @@
       "automerge": true
     },
     {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "12.x"
+    },
+    {
       "matchPackageNames": ["jest", "ts-jest"],
       "matchPackagePrefixes": ["jest-"],
       "groupName": "jest"
