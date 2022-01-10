@@ -9,7 +9,7 @@ It is designed for https://github.com/int128/typescript-action.
 - Group dependencies
   - `jest`
   - `eslint`
-- Set `@types/node` version to 16
+- Update `@types/node` to 16.x
 - Update `using` node version in `action.yaml`
 
 
