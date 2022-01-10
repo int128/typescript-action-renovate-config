@@ -27,8 +27,7 @@
       "fileMatch": ["^action.ya?ml$"],
       "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
       "depNameTemplate": "@types/node",
-      "datasourceTemplate": "npm",
-      "rangeStrategy": "replace"
+      "datasourceTemplate": "npm"
     }
   ]
 }
