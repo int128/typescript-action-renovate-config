@@ -8,10 +8,6 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["@types/node"],
-      "allowedVersions": "16.x"
-    },
-    {
       "matchPackageNames": ["jest", "ts-jest"],
       "matchPackagePrefixes": ["jest-"],
       "groupName": "jest"
@@ -20,6 +16,10 @@
       "matchPackageNames": ["eslint"],
       "matchPackagePrefixes": ["eslint-", "@typescript-eslint/"],
       "groupName": "eslint"
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "16.x"
     }
   ],
   "regexManagers": [
@@ -28,7 +28,7 @@
       "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
       "depNameTemplate": "@types/node",
       "datasourceTemplate": "npm",
-      "versioningTemplate": "regex:^(?<major>\\d+)$"
+      "rangeStrategy": "replace"
     }
   ]
 }
