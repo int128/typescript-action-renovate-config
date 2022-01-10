@@ -21,5 +21,14 @@
       "matchPackagePrefixes": ["eslint-", "@typescript-eslint/"],
       "groupName": "eslint"
     }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^action.ya?ml$"],
+      "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
+      "depNameTemplate": "@types/node",
+      "datasourceTemplate": "npm",
+      "versioningTemplate": "regex:^(?<major>\\d+)$"
+    }
   ]
 }
