@@ -17,6 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: rinchsan/renovate-config-validator@v0.0.8
+      - uses: suzuki-shunsuke/github-action-renovate-config-validator@v0.1.2
         with:
-          pattern: default.json
+          config_file_path: default.json
