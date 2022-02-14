@@ -10,12 +10,14 @@
     {
       "matchPackageNames": ["jest", "ts-jest"],
       "matchPackagePrefixes": ["jest-"],
-      "groupName": "jest"
+      "groupName": "jest",
+      "automerge": true
     },
     {
       "matchPackageNames": ["eslint"],
       "matchPackagePrefixes": ["eslint-", "@typescript-eslint/"],
-      "groupName": "eslint"
+      "groupName": "eslint",
+      "automerge": true
     },
     {
       "matchPackageNames": ["@types/node"],

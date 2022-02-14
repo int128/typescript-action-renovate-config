@@ -5,7 +5,10 @@ It is designed for https://github.com/int128/typescript-action.
 
 
 ## Features
-- Enable automerge (except major update)
+- Enable automerge
+  - All updates of minor, patch and pin
+  - `jest` (including major)
+  - `eslint` (including major)
 - Group dependencies
   - `jest`
   - `eslint`
