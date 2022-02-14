@@ -26,7 +26,10 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^action.ya?ml$"],
+      "fileMatch": [
+        "^action.ya?ml$",
+        "^.+/action.ya?ml$"
+      ],
       "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
       "depNameTemplate": "@types/node",
       "datasourceTemplate": "npm"
