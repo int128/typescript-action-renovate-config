@@ -20,6 +20,12 @@
       "automerge": true
     },
     {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "automerge": true
+    },
+    {
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "16.x"
     }
