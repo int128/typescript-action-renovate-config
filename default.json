@@ -8,7 +8,7 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["jest", "ts-jest"],
+      "matchPackageNames": ["jest", "ts-jest", "@types/jest"],
       "matchPackagePrefixes": ["jest-"],
       "groupName": "jest",
       "automerge": true
