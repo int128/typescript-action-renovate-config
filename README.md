@@ -5,14 +5,12 @@ It is designed for https://github.com/int128/typescript-action.
 
 
 ## Features
-- Enable automerge
-  - All updates of minor, patch and pin
-  - `jest` (including major)
-  - `eslint` (including major)
+- Enable automerge of test packages (`jest`)
+- Enable automerge of lint packages (`eslint`)
 - Group dependencies
   - `jest`
   - `eslint`
-- Update `@types/node` to 16.x
+- Restrict `@types/node` to 16.x
 - Update `using` node version in `action.yaml`
 
 
@@ -24,6 +22,7 @@ Create `renovate.json5` as follows:
 {
   "extends": [
     "config:base",
+    ":automergeMinor",
     "github>int128/typescript-action-renovate-config",
   ],
 }
