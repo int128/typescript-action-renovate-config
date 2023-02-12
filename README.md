@@ -1,4 +1,4 @@
-# typescript-action-renovate-config [![renovate-config](https://github.com/int128/typescript-action-renovate-config/actions/workflows/renovate-config.yaml/badge.svg)](https://github.com/int128/typescript-action-renovate-config/actions/workflows/renovate-config.yaml)
+# typescript-action-renovate-config [![validate](https://github.com/int128/typescript-action-renovate-config/actions/workflows/validate.yaml/badge.svg)](https://github.com/int128/typescript-action-renovate-config/actions/workflows/validate.yaml)
 
 This repository contains a config for [Renovate](https://docs.renovatebot.com).
 It is designed for https://github.com/int128/typescript-action.
