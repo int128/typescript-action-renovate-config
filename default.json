@@ -1,37 +1,34 @@
 {
-  "labels": [
-    "renovate/{{depName}}"
-  ],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin"],
-      "automerge": true
-    },
-    {
+      "description": "Auto-merge test packages",
       "matchPackageNames": ["jest", "ts-jest", "@types/jest"],
       "matchPackagePrefixes": ["jest-"],
       "groupName": "jest",
       "automerge": true
     },
     {
+      "description": "Auto-merge lint packages",
       "matchPackageNames": ["eslint"],
       "matchPackagePrefixes": ["eslint-", "@typescript-eslint/"],
       "groupName": "eslint",
       "automerge": true
     },
     {
-      "matchManagers": [
-        "github-actions"
-      ],
+      "description": "Auto-merge actions",
+      "matchManagers": ["github-actions"],
       "automerge": true
     },
     {
+      "description": "Restrict the version supported in GitHub Actions",
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "16.x"
     }
   ],
   "regexManagers": [
     {
+      "description": "Update using field in action.yaml",
       "fileMatch": [
         "^action.ya?ml$",
         "^.+/action.ya?ml$"
