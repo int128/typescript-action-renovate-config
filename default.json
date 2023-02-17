@@ -16,11 +16,6 @@
       "automerge": true
     },
     {
-      "description": "Auto-merge actions",
-      "matchManagers": ["github-actions"],
-      "automerge": true
-    },
-    {
       "description": "Restrict the version supported in GitHub Actions",
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "16.x"
