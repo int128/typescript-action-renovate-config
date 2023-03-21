@@ -1,5 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":pinAllExceptPeerDependencies"
+  ],
   "packageRules": [
     {
       "description": "Auto-merge test packages",
