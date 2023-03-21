@@ -22,6 +22,12 @@
       "description": "Restrict the version supported in GitHub Actions",
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "16.x"
+    },
+    {
+      "description": "Disable pinning of node version in action.yaml",
+      "matchPackageNames": ["@types/node"],
+      "matchPaths": ["**/action.yaml", "**/action.yml"],
+      "rangeStrategy": "auto"
     }
   ],
   "regexManagers": [
@@ -32,7 +38,6 @@
         "^.+/action.ya?ml$"
       ],
       "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
-      "rangeStrategy": "auto",
       "depNameTemplate": "@types/node",
       "datasourceTemplate": "npm"
     }
