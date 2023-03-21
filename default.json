@@ -32,6 +32,7 @@
         "^.+/action.ya?ml$"
       ],
       "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
+      "versioningTemplate": "semver-coerced",
       "depNameTemplate": "@types/node",
       "datasourceTemplate": "npm"
     }
