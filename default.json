@@ -41,6 +41,19 @@
       "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
+    },
+    {
+      "description": "Update this config by self",
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "int128/typescript-action-renovate-config",
+      "fileMatch": [
+        "^renovate\\.json5?$",
+        "^\\.github/renovate\\.json5?$",
+      ],
+      "matchStrings": [
+        "\"github>int128/typescript-action-renovate-config#(?<currentValue>.+?)\"",
+        "\"github>int128/typescript-action-renovate-config:.+?#(?<currentValue>.+?)\""
+      ]
     }
   ]
 }
