@@ -27,7 +27,7 @@
     {
       "description": "Disable pinning of node version",
       "matchPackageNames": ["node"],
-      "matchPaths": ["**/action.yaml", "**/action.yml", "package.json"],
+      "matchFileNames": ["**/action.yaml", "**/action.yml", "package.json"],
       "rangeStrategy": "auto"
     }
   ],
