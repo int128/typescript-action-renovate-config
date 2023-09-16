@@ -45,7 +45,8 @@
     {
       "description": "Update @tsconfig/node in tsconfig.json",
       "fileMatch": ["^tsconfig.json$"],
-      "matchStrings": ["\"(?<depName>@tsconfig/node.+?)/tsconfig.json\""],
+      "matchStrings": ["@tsconfig/node(?<currentValue>\\d+)/tsconfig.json"],
+      "depNameTemplate": "node",
       "datasourceTemplate": "npm"
     },
     {
