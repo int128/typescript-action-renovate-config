@@ -40,8 +40,9 @@
       "allowedVersions": "20.x"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "description": "Update using field in action.yaml",
       "fileMatch": [
         "^action.ya?ml$",
@@ -54,6 +55,7 @@
       "datasourceTemplate": "npm"
     },
     {
+      "customType": "regex",
       "description": "Update node-version in workflows",
       "fileMatch": [
         "^\\.github/workflows/.+\\.ya?ml$"
@@ -65,6 +67,7 @@
       "datasourceTemplate": "npm"
     },
     {
+      "customType": "regex",
       "description": "Update this config by self",
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "int128/typescript-action-renovate-config",
