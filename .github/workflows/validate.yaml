@@ -17,6 +17,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: npx --package=renovate -- renovate-config-validator *.json .github/renovate.json
+      - run: corepack enable pnpm
+      - run: pnpm --package renovate dlx renovate-config-validator *.json .github/renovate.json
