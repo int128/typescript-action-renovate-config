@@ -6,21 +6,35 @@
   "packageRules": [
     {
       "description": "Auto-merge test packages",
-      "matchPackageNames": ["jest", "ts-jest", "@types/jest"],
-      "matchPackagePrefixes": ["jest-"],
+      "matchPackageNames": [
+        "jest",
+        "ts-jest",
+        "@types/jest"
+      ],
+      "matchPackagePrefixes": [
+        "jest-"
+      ],
       "groupName": "jest",
       "automerge": true
     },
     {
       "description": "Auto-merge lint packages",
-      "matchPackageNames": ["eslint"],
-      "matchPackagePrefixes": ["eslint-", "@typescript-eslint/"],
+      "matchPackageNames": [
+        "eslint"
+      ],
+      "matchPackagePrefixes": [
+        "eslint-",
+        "@typescript-eslint/"
+      ],
       "groupName": "eslint",
       "automerge": true
     },
     {
       "description": "Update Node version of this action",
-      "matchPackageNames": ["node", "@types/node"],
+      "matchPackageNames": [
+        "node",
+        "@types/node"
+      ],
       "groupName": "node",
       "versioning": "npm",
       "allowedVersions": "20.x"
@@ -33,14 +47,20 @@
         "^action.ya?ml$",
         "^.+/action.ya?ml$"
       ],
-      "matchStrings": ["using: 'node(?<currentValue>\\d+)'"],
+      "matchStrings": [
+        "using: 'node(?<currentValue>\\d+)'"
+      ],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
     },
     {
       "description": "Update node-version in workflows",
-      "fileMatch": ["^\\.github/workflows/.+\\.ya?ml$"],
-      "matchStrings": ["node-version: +(?<currentValue>\\d+)\\n"],
+      "fileMatch": [
+        "^\\.github/workflows/.+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "node-version: +(?<currentValue>\\d+)\\n"
+      ],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
     },
@@ -50,7 +70,7 @@
       "depNameTemplate": "int128/typescript-action-renovate-config",
       "fileMatch": [
         "^renovate\\.json5?$",
-        "^\\.github/renovate\\.json5?$",
+        "^\\.github/renovate\\.json5?$"
       ],
       "matchStrings": [
         "\"github>int128/typescript-action-renovate-config#(?<currentValue>.+?)\"",
