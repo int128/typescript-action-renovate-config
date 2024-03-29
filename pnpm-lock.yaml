@@ -6,7 +6,7 @@ settings:
 
 devDependencies:
   renovate:
-    specifier: ^37.274.0
+    specifier: 37.274.0
     version: 37.274.0(typanion@3.14.0)
 
 packages:
