@@ -6,6 +6,8 @@ on:
       - .github/workflows/validate.yaml
       - .github/renovate.*
       - default.json
+      - package.json
+      - pnpm-lock.yaml
   push:
     branches:
       - main
