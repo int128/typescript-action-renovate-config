@@ -20,6 +20,7 @@
       "matchPackageNames": [
         "eslint",
         "eslint-**",
+        "typescript-eslint",
         "@typescript-eslint/*"
       ],
       "groupName": "eslint",
