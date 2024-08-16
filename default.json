@@ -9,10 +9,8 @@
       "matchPackageNames": [
         "jest",
         "ts-jest",
-        "@types/jest"
-      ],
-      "matchPackagePrefixes": [
-        "jest-"
+        "@types/jest",
+        "jest-**"
       ],
       "groupName": "jest",
       "automerge": true
@@ -20,11 +18,9 @@
     {
       "description": "Auto-merge lint packages",
       "matchPackageNames": [
-        "eslint"
-      ],
-      "matchPackagePrefixes": [
-        "eslint-",
-        "@typescript-eslint/"
+        "eslint",
+        "eslint-**",
+        "@typescript-eslint/*"
       ],
       "groupName": "eslint",
       "automerge": true
