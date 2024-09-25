@@ -5,20 +5,13 @@ on:
     paths:
       - .github/workflows/validate.yaml
       - .github/renovate.*
-      - default.json
-      - package.json
-      - pnpm-lock.yaml
+      - '*.json'
   push:
     branches:
       - main
 
 jobs:
-  renovate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - run: corepack enable pnpm
-      - run: pnpm i
-      - run: pnpm run test
+  validate:
+    uses: int128/renovate-base/.github/workflows/validate.yaml@main
+    with:
+      config: .github/renovate.* *.json
