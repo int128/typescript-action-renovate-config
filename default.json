@@ -7,23 +7,15 @@
     {
       "description": "Auto-merge test packages",
       "matchPackageNames": [
-        "jest",
-        "ts-jest",
-        "@types/jest",
-        "jest-**"
+        "vitest",
       ],
-      "groupName": "jest",
       "automerge": true
     },
     {
       "description": "Auto-merge lint packages",
       "matchPackageNames": [
-        "eslint",
-        "eslint-**",
-        "typescript-eslint",
-        "@typescript-eslint/*"
+        "@biomejs/biome",
       ],
-      "groupName": "eslint",
       "automerge": true
     },
     {
@@ -47,18 +39,6 @@
       ],
       "matchStrings": [
         "using: 'node(?<currentValue>\\d+)'"
-      ],
-      "depNameTemplate": "node",
-      "datasourceTemplate": "npm"
-    },
-    {
-      "customType": "regex",
-      "description": "Update node-version in workflows",
-      "fileMatch": [
-        "^\\.github/workflows/.+\\.ya?ml$"
-      ],
-      "matchStrings": [
-        "node-version: +(?<currentValue>\\d+)\\n"
       ],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
