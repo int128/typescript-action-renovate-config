@@ -27,7 +27,7 @@
       "groupName": "node",
       "groupSlug": "node",
       "versioning": "npm",
-      "allowedVersions": "24.x"
+      "allowedVersions": "<=24"
     },
     {
       "description": "Do not replace @tsconfig/node to new major version",
