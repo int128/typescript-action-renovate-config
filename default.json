@@ -29,7 +29,7 @@
       "allowedVersions": "<=24"
     },
     {
-      "description": "Replace @tsconfig/node20 with @tsconfig/node24",
+      "description": "Replace @tsconfig/node and group it into node major updates",
       "matchDepNames": [
         "@tsconfig/node20"
       ],
@@ -39,8 +39,7 @@
       "groupSlug": "major-node",
       "minimumReleaseAge": null,
       "replacement": {
-        "commitMessageAction": "Update",
-        "commitMessageExtra": "to {{prettyNewMajor}}"
+        "commitMessageAction": "Update"
       }
     }
   ],
