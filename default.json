@@ -26,7 +26,7 @@
       ],
       "groupName": "node",
       "versioning": "npm",
-      "allowedVersions": "20.x"
+      "allowedVersions": "24.x"
     },
     {
       "description": "Do not replace @tsconfig/node to new major version",
@@ -39,11 +39,11 @@
       "enabled": false
     },
     {
-      "description": "Replace @tsconfig/node16 with @tsconfig/node20",
+      "description": "Replace @tsconfig/node20 with @tsconfig/node24",
       "matchPackageNames": [
-        "@tsconfig/node16"
+        "@tsconfig/node20"
       ],
-      "replacementName": "@tsconfig/node20"
+      "replacementName": "@tsconfig/node24"
     }
   ],
   "customManagers": [
