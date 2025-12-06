@@ -26,7 +26,6 @@
       ],
       "groupName": "node",
       "groupSlug": "node",
-      "versioning": "npm",
       "allowedVersions": "<=24"
     },
     {
@@ -52,7 +51,7 @@
         "using: 'node(?<currentValue>\\d+)'"
       ],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm",
+      "datasourceTemplate": "node-version",
       "versioningTemplate": "semver-coerced"
     },
     {
@@ -65,7 +64,7 @@
         "@tsconfig/node(?<currentValue>\\d+)/"
       ],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm",
+      "datasourceTemplate": "node-version",
       "versioningTemplate": "semver-coerced"
     },
     {
