@@ -27,6 +27,13 @@
       "groupName": "node",
       "versioning": "npm",
       "allowedVersions": "20.x"
+    },
+    {
+      "description": "Replace @tsconfig/node16 with @tsconfig/node20",
+      "matchPackageNames": [
+        "@tsconfig/node16"
+      ],
+      "replacementName": "@tsconfig/node20"
     }
   ],
   "customManagers": [
@@ -39,6 +46,18 @@
       ],
       "matchStrings": [
         "using: 'node(?<currentValue>\\d+)'"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "npm"
+    },
+    {
+      "customType": "regex",
+      "description": "Update @tsconfig/node version in tsconfig.json",
+      "managerFilePatterns": [
+        "**/tsconfig.json"
+      ],
+      "matchStrings": [
+        "@tsconfig/node(?<currentValue>\\d+)/"
       ],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
