@@ -39,9 +39,8 @@
       "groupSlug": "major-node",
       "minimumReleaseAge": null,
       "replacement": {
-        "branchTopic": null,
-        "commitMessageAction": null,
-        "commitMessageExtra": null
+        "commitMessageAction": "Update",
+        "commitMessageExtra": "to {{prettyNewMajor}}"
       }
     }
   ],
