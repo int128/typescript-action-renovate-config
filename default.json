@@ -61,7 +61,8 @@
         "using: 'node(?<currentValue>\\d+)'"
       ],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "npm",
+      "versioningTemplate": "semver-coerced"
     },
     {
       "customType": "regex",
@@ -73,7 +74,8 @@
         "@tsconfig/node(?<currentValue>\\d+)/"
       ],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "npm",
+      "versioningTemplate": "semver-coerced"
     },
     {
       "customType": "regex",
