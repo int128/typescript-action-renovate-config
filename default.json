@@ -25,6 +25,7 @@
         "@types/node"
       ],
       "groupName": "node",
+      "groupSlug": "node",
       "versioning": "npm",
       "allowedVersions": "24.x"
     },
@@ -44,7 +45,8 @@
         "@tsconfig/node20"
       ],
       "replacementName": "@tsconfig/node24",
-      "groupName": "major-node"
+      "groupName": "node",
+      "groupSlug": "major-node"
     }
   ],
   "customManagers": [
