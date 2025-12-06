@@ -1,0 +1,35 @@
+name: ts
+
+on:
+  pull_request:
+    paths:
+      - src/**
+      - '*.json'
+      - '*.yaml'
+      - .github/workflows/ts.yaml
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+      - '*.json'
+      - '*.yaml'
+      - .github/workflows/ts.yaml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
+        with:
+          node-version-file: .node-version
+          package-manager-cache: false
+      - run: npm install -g pnpm@latest-10
+      - run: pnpm i
+      - run: pnpm run build
+      - name: Run the test fixture action
+        uses: ./
+        with:
+          example: foo

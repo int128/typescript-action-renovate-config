@@ -1,0 +1,19 @@
+{
+  "description": "Test fixture for typescript-action-renovate-config",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@tsconfig/node20": "20.1.8",
+    "@types/node": "20.19.25",
+    "pnpm": "10.23.0",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "packageManager": "pnpm@10.23.0"
+}
