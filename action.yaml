@@ -1,0 +1,9 @@
+name: typescript-action-renovate-config
+description: Test fixture for typescript-action-renovate-config
+inputs:
+  example:
+    description: Example
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
