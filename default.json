@@ -20,7 +20,7 @@
     },
     {
       "description": "Update node version of this action",
-      "matchPackageNames": [
+      "matchDepNames": [
         "node",
         "@types/node"
       ],
@@ -41,7 +41,7 @@
     },
     {
       "description": "Replace @tsconfig/node20 with @tsconfig/node24",
-      "matchPackageNames": [
+      "matchDepNames": [
         "@tsconfig/node20"
       ],
       "replacementName": "@tsconfig/node24",
