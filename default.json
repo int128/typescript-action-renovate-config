@@ -43,7 +43,8 @@
       "matchPackageNames": [
         "@tsconfig/node20"
       ],
-      "replacementName": "@tsconfig/node24"
+      "replacementName": "@tsconfig/node24",
+      "groupName": "node"
     }
   ],
   "customManagers": [
