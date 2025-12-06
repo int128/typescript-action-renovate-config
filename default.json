@@ -33,9 +33,7 @@
       "matchPackageNames": [
         "@tsconfig/node16"
       ],
-      "replacePackageNames": [
-        "@tsconfig/node20"
-      ]
+      "replacementName": "@tsconfig/node20"
     }
   ],
   "customManagers": [
