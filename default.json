@@ -57,7 +57,7 @@
         "**/tsconfig.json"
       ],
       "matchStrings": [
-        "@tsconfig/node(?<currentValue>\\d+)"
+        "@tsconfig/node(?<currentValue>\\d+)/"
       ],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
