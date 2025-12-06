@@ -7,19 +7,19 @@
     {
       "description": "Auto-merge test packages",
       "matchPackageNames": [
-        "vitest",
+        "vitest"
       ],
       "automerge": true
     },
     {
       "description": "Auto-merge lint packages",
       "matchPackageNames": [
-        "@biomejs/biome",
+        "@biomejs/biome"
       ],
       "automerge": true
     },
     {
-      "description": "Update Node version of this action",
+      "description": "Update node version of this action",
       "matchPackageNames": [
         "node",
         "@types/node"
@@ -32,10 +32,10 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Update using field in action.yaml",
-      "fileMatch": [
-        "^action.ya?ml$",
-        "^.+/action.ya?ml$"
+      "description": "Update node version of using field in action.yaml",
+      "managerFilePatterns": [
+        "**/action.yaml",
+        "**/action.yml"
       ],
       "matchStrings": [
         "using: 'node(?<currentValue>\\d+)'"
@@ -48,9 +48,11 @@
       "description": "Update this config by self",
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "int128/typescript-action-renovate-config",
-      "fileMatch": [
-        "^renovate\\.json5?$",
-        "^\\.github/renovate\\.json5?$"
+      "managerFilePatterns": [
+        "renovate.json",
+        "renovate.json5",
+        ".github/renovate.json",
+        ".github/renovate.json5"
       ],
       "matchStrings": [
         "\"github>int128/typescript-action-renovate-config#(?<currentValue>.+?)\"",
