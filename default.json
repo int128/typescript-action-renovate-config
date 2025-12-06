@@ -43,17 +43,8 @@
       "matchPackageNames": [
         "@tsconfig/node20"
       ],
-      "replacementName": "@tsconfig/node24"
-    },
-    {
-      "description": "Group replacement of @tsconfig/node with node version",
-      "matchPackageNames": [
-        "@tsconfig/node*"
-      ],
-      "matchUpdateTypes": [
-        "replacement"
-      ],
-      "groupName": "node"
+      "replacementName": "@tsconfig/node24",
+      "groupName": "major-node"
     }
   ],
   "customManagers": [
