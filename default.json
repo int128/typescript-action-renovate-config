@@ -27,6 +27,16 @@
       "groupName": "node",
       "versioning": "npm",
       "allowedVersions": "20.x"
+    },
+    {
+      "description": "Do not replace @tsconfig/node to new major version",
+      "matchPackageNames": [
+        "@tsconfig/node*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "enabled": false
     }
   ],
   "customManagers": [
