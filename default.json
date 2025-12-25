@@ -19,6 +19,16 @@
       "automerge": true
     },
     {
+      "description": "Do not replace @tsconfig/node to new major version",
+      "matchPackageNames": [
+        "@tsconfig/node*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "enabled": false
+    },
+    {
       "description": "Update node version of this action",
       "matchDepNames": [
         "node",
