@@ -3,5 +3,6 @@
   "extends": [
     "github>int128/renovate-base",
     "local>int128/typescript-action-renovate-config"
-  ]
+  ],
+  "platformAutomerge": true
 }
