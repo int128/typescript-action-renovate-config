@@ -12,8 +12,8 @@ importers:
         specifier: 20.1.8
         version: 20.1.8
       '@types/node':
-        specifier: 20.19.28
-        version: 20.19.28
+        specifier: 20.19.30
+        version: 20.19.30
       pnpm:
         specifier: 10.28.0
         version: 10.28.0
@@ -26,8 +26,8 @@ packages:
   '@tsconfig/node20@20.1.8':
     resolution: {integrity: sha512-Em+IdPfByIzWRRpqWL4Z7ArLHZGxmc36BxE3jCz9nBFSm+5aLaPMZyjwu4yetvyKXeogWcxik4L1jB5JTWfw7A==}
 
-  '@types/node@20.19.28':
-    resolution: {integrity: sha512-VyKBr25BuFDzBFCK5sUM6ZXiWfqgCTwTAOK8qzGV/m9FCirXYDlmczJ+d5dXBAQALGCdRRdbteKYfJ84NGEusw==}
+  '@types/node@20.19.30':
+    resolution: {integrity: sha512-WJtwWJu7UdlvzEAUm484QNg5eAoq5QR08KDNx7g45Usrs2NtOPiX8ugDqmKdXkyL03rBqU5dYNYVQetEpBHq2g==}
 
   pnpm@10.28.0:
     resolution: {integrity: sha512-Bd9x0UIfITmeBT/eVnzqNNRG+gLHZXFEG/wceVbpjjYwiJgtlARl/TRIDU2QoGaLwSNi+KqIAApk6D0LDke+SA==}
@@ -46,7 +46,7 @@ snapshots:
 
   '@tsconfig/node20@20.1.8': {}
 
-  '@types/node@20.19.28':
+  '@types/node@20.19.30':
     dependencies:
       undici-types: 6.21.0
 
