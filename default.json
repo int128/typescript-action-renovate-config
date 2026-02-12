@@ -20,13 +20,13 @@
     },
     {
       "description": "Update node version of this action",
-      "matchPackageNames": [
+      "matchDepNames": [
         "node",
         "@types/node"
       ],
       "groupName": "node",
-      "versioning": "npm",
-      "allowedVersions": "20.x"
+      "groupSlug": "node",
+      "allowedVersions": "<=24"
     },
     {
       "description": "Do not replace @tsconfig/node to new major version",
@@ -37,6 +37,20 @@
         "replacement"
       ],
       "enabled": false
+    },
+    {
+      "description": "Replace @tsconfig/node and group it into node major updates",
+      "matchDepNames": [
+        "@tsconfig/node20"
+      ],
+      "replacementName": "@tsconfig/node24",
+      "replacementVersion": "24.0.3",
+      "groupName": "node",
+      "groupSlug": "major-node",
+      "minimumReleaseAge": null,
+      "replacement": {
+        "commitMessageAction": "Update"
+      }
     }
   ],
   "customManagers": [
@@ -51,7 +65,19 @@
         "using: 'node(?<currentValue>\\d+)'"
       ],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "node-version"
+    },
+    {
+      "customType": "regex",
+      "description": "Update @tsconfig/node version in tsconfig.json",
+      "managerFilePatterns": [
+        "**/tsconfig.json"
+      ],
+      "matchStrings": [
+        "@tsconfig/node(?<currentValue>\\d+)/"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node-version"
     },
     {
       "customType": "regex",
