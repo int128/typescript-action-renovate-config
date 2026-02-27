@@ -9,11 +9,11 @@
   "devDependencies": {
     "@tsconfig/node20": "20.1.9",
     "@types/node": "20.19.33",
-    "pnpm": "10.29.3",
+    "pnpm": "10.30.1",
     "typescript": "5.9.3"
   },
   "engines": {
     "node": "20.x"
   },
-  "packageManager": "pnpm@10.29.3"
+  "packageManager": "pnpm@10.30.1"
 }
