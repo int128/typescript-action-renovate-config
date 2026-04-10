@@ -8,7 +8,7 @@
   "dependencies": {},
   "devDependencies": {
     "@tsconfig/node20": "20.1.9",
-    "@types/node": "20.19.37",
+    "@types/node": "20.19.39",
     "pnpm": "10.33.0",
     "typescript": "5.9.3"
   },
