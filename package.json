@@ -7,7 +7,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@tsconfig/node24": "24.0.3",
+    "@tsconfig/node24": "24.0.4",
     "@types/node": "24.12.2",
     "pnpm": "10.33.0",
     "typescript": "6.0.3"
