@@ -37,8 +37,7 @@
       "replacementVersion": "24.0.3",
       "minimumReleaseAge": null,
       "replacement": {
-        "branchTopic": "major-node",
-        "commitMessageAction": "Update"
+        "branchTopic": "major-node"
       }
     }
   ],
