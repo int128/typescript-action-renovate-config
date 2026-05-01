@@ -29,16 +29,6 @@
       "allowedVersions": "<=24"
     },
     {
-      "description": "Do not replace @tsconfig/node to new major version",
-      "matchPackageNames": [
-        "@tsconfig/node*"
-      ],
-      "matchUpdateTypes": [
-        "replacement"
-      ],
-      "enabled": false
-    },
-    {
       "description": "Replace @tsconfig/node and group it into node major updates",
       "matchDepNames": [
         "@tsconfig/node20"
