@@ -7,13 +7,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@tsconfig/node20": "20.1.9",
-    "@types/node": "20.19.39",
+    "@tsconfig/node24": "24.0.3",
+    "@types/node": "24.12.2",
     "pnpm": "10.33.0",
     "typescript": "6.0.3"
   },
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   },
   "packageManager": "pnpm@10.33.0"
 }
