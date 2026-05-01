@@ -35,10 +35,9 @@
       ],
       "replacementName": "@tsconfig/node24",
       "replacementVersion": "24.0.3",
-      "groupName": "node",
-      "groupSlug": "major-node",
       "minimumReleaseAge": null,
       "replacement": {
+        "branchTopic": "major-node",
         "commitMessageAction": "Update"
       }
     }
