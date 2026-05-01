@@ -38,7 +38,7 @@
       "minimumReleaseAge": null,
       "replacement": {
         "branchTopic": "major-node",
-        "commitMessageAction": null
+        "commitMessageAction": "Update node to v24"
       }
     }
   ],
