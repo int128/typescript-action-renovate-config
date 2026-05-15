@@ -15,8 +15,8 @@ importers:
         specifier: 24.12.3
         version: 24.12.3
       pnpm:
-        specifier: 11.0.5
-        version: 11.0.5
+        specifier: 11.0.8
+        version: 11.0.8
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -29,8 +29,8 @@ packages:
   '@types/node@24.12.3':
     resolution: {integrity: sha512-8oljBDGun9cIsZRJR6fkihn0TSXJI0UDOOhncYaERq6M0JMDoPLxyscwruJcb4GKS6dvK/d8xebYBg27h/duaQ==}
 
-  pnpm@11.0.5:
-    resolution: {integrity: sha512-lPoJ5yAWQCrvzniORplOGOsZIpmLFrb9Wqa6/Yrk3qBdCFL2Akf9t9WrgZmnsL7agwOY8/gMufgiOYUioVNUgQ==}
+  pnpm@11.0.8:
+    resolution: {integrity: sha512-TECX4d0tQjcsTn+lp5H/KPx1pITHrBkuZLHfD97xdZS6mC+bT+2a37PHV4RvVlt5mydj+zcz0d4by4LPRmhJEg==}
     engines: {node: '>=22.13'}
     hasBin: true
 
@@ -50,7 +50,7 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  pnpm@11.0.5: {}
+  pnpm@11.0.8: {}
 
   typescript@6.0.3: {}
 
