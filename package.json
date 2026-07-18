@@ -10,7 +10,7 @@
     "@tsconfig/node24": "24.0.4",
     "@types/node": "24.13.3",
     "pnpm": "11.11.0",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "engines": {
     "node": "24.x"
