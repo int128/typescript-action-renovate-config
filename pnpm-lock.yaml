@@ -15,8 +15,8 @@ importers:
         specifier: 24.13.3
         version: 24.13.3
       pnpm:
-        specifier: 11.24.0
-        version: 11.24.0
+        specifier: 11.25.0
+        version: 11.25.0
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -149,8 +149,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  pnpm@11.24.0:
-    resolution: {integrity: sha512-vSfjRel23LC+C3oSKCF7BJqBfiGx81XJDb59xGZxiVqLwebQbCRVRQXqk+oLRfSJon7Bv7yN5qlln8oPFvoAAA==}
+  pnpm@11.25.0:
+    resolution: {integrity: sha512-XN6SW08HX3Jetx+64YpC/+eEUkeJ8ZthxzHLhyHsKKruFg4BqNWvT+2ypCzb8wDv4j2zVrDUoXtNY+EfirfJVg==}
     engines: {node: '>=22.13'}
     hasBin: true
 
@@ -230,7 +230,7 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  pnpm@11.24.0: {}
+  pnpm@11.25.0: {}
 
   typescript@7.0.2:
     optionalDependencies:
