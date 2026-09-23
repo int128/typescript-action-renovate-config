@@ -13,6 +13,16 @@
       "automerge": true
     },
     {
+      "description": "Exclude TypeScript 7.0. See https://github.com/vercel/ncc/issues/1336",
+      "matchDepNames": [
+        "typescript"
+      ],
+      "matchDatasources": [
+        "npm"
+      ],
+      "allowedVersions": "!/^7\\.0\\./"
+    },
+    {
       "description": "Update node version of this action",
       "matchDepNames": [
         "node",
