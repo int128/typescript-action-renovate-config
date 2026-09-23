@@ -5,15 +5,9 @@
   ],
   "packageRules": [
     {
-      "description": "Auto-merge test packages",
+      "description": "Auto-merge test or lint packages",
       "matchPackageNames": [
-        "vitest"
-      ],
-      "automerge": true
-    },
-    {
-      "description": "Auto-merge lint packages",
-      "matchPackageNames": [
+        "vitest",
         "@biomejs/biome"
       ],
       "automerge": true
