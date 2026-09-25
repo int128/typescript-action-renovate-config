@@ -170,8 +170,8 @@ importers:
         specifier: 24.0.5
         version: 24.0.5
       '@types/node':
-        specifier: 24.13.4
-        version: 24.13.4
+        specifier: 24.13.5
+        version: 24.13.5
       pnpm:
         specifier: 12.4.1
         version: 12.4.1
@@ -261,8 +261,8 @@ packages:
   '@tsconfig/node24@24.0.5':
     resolution: {integrity: sha512-DWC54fGPuhZgg3Ighg4Y/A/bA3ZdB5hnzAuv/MkQ/X85sVsBsMQxu8t7khutdYeiNksBbFdDyeqv1HSW2Zl8aA==}
 
-  '@types/node@24.13.4':
-    resolution: {integrity: sha512-YJ7EqCstVTzIr0fMr7qul/977en+pQHrfmuKIo6Zr9i75Be21dr3MovcfvGtyvi2HAUrRerWps5sMO9I7WaxDw==}
+  '@types/node@24.13.5':
+    resolution: {integrity: sha512-TXyindR+lBr22aJIdMQzCFHPHR6cR4js838mRDCSz5hOKWZvZwsXSSiXDmjRj4iJmgl+sR9O+1mkoVBSMadNug==}
 
   '@typescript/typescript-aix-ppc64@7.0.2':
     resolution: {integrity: sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==}
@@ -443,7 +443,7 @@ snapshots:
 
   '@tsconfig/node24@24.0.5': {}
 
-  '@types/node@24.13.4':
+  '@types/node@24.13.5':
     dependencies:
       undici-types: 7.18.2
 
