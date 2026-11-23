@@ -44,6 +44,16 @@
         "branchTopic": "major-node",
         "commitMessageAction": "Update node to v24"
       }
+    },
+    {
+      "description": "Do not replace @tsconfig/node",
+      "matchDepNames": [
+        "@tsconfig/node24"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "enabled": false
     }
   ],
   "customManagers": [
