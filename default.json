@@ -71,22 +71,6 @@
       ],
       "depNameTemplate": "node",
       "datasourceTemplate": "node-version"
-    },
-    {
-      "customType": "regex",
-      "description": "Update this config by self",
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "int128/typescript-action-renovate-config",
-      "managerFilePatterns": [
-        "renovate.json",
-        "renovate.json5",
-        ".github/renovate.json",
-        ".github/renovate.json5"
-      ],
-      "matchStrings": [
-        "\"github>int128/typescript-action-renovate-config#(?<currentValue>.+?)\"",
-        "\"github>int128/typescript-action-renovate-config:.+?#(?<currentValue>.+?)\""
-      ]
     }
   ]
 }
